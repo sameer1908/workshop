@@ -1,38 +1,113 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+}
+
+.hero {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
   text-align: center;
+  padding: 80px 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn {
+  background: #fff;
+  color: #4f46e5;
+  text-decoration: none;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.section h2{
+  margin-bottom: 20px;
+}
+.workshop_title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.workshop_title p {
+  font-size: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.workshop_description {
+  margin-bottom: 10px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.workshop_details p {
+  font-size: 14px;
+  line-height: 1.15rem;
+}
+.workshop_book_btn {
+  margin-top: 10px;
+  background-color: #14b8a6;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+.details-grid div {
+  background: white;
+  border-radius: 10px;
+}
+
+ul li {
+  margin-bottom: 12px;
+}
+
+.faq {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.form input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
   }
 }

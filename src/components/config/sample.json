@@ -1,0 +1,62 @@
+{
+  "success": true,
+  "message": "Data fetched successfully",
+  "data": [
+    {
+      "id": 1,
+      "title": "AI & Robotics Summer Workshop",
+      "description": "Learn Artificial Intelligence, Robotics, Coding, and Automation through hands-on projects.",
+      "ageGroup": "8-14 Years",
+      "duration": "4 Weeks",
+      "mode": "Online",
+      "fee": 2999,
+      "startDate": "2026-07-15",
+      "instructor": "John Smith",
+      "rating": 4.8,
+      "totalStudents": 250,
+      "image": "https://picsum.photos/400/250?random=1"
+    },
+    {
+      "id": 2,
+      "title": "Game Development Bootcamp",
+      "description": "Create your own 2D and 3D games using modern game development tools.",
+      "ageGroup": "10-16 Years",
+      "duration": "6 Weeks",
+      "mode": "Online",
+      "fee": 3999,
+      "startDate": "2026-08-01",
+      "instructor": "Sarah Johnson",
+      "rating": 4.7,
+      "totalStudents": 180,
+      "image": "https://picsum.photos/400/250?random=2"
+    },
+    {
+      "id": 3,
+      "title": "Python Programming for Kids",
+      "description": "Master Python basics with fun projects and interactive coding exercises.",
+      "ageGroup": "9-15 Years",
+      "duration": "5 Weeks",
+      "mode": "Online",
+      "fee": 2499,
+      "startDate": "2026-07-20",
+      "instructor": "Michael Lee",
+      "rating": 4.9,
+      "totalStudents": 320,
+      "image": "https://picsum.photos/400/250?random=3"
+    },
+    {
+      "id": 4,
+      "title": "Creative Coding Camp",
+      "description": "Build animations, digital art, and interactive stories through coding.",
+      "ageGroup": "8-13 Years",
+      "duration": "3 Weeks",
+      "mode": "Offline",
+      "fee": 1999,
+      "startDate": "2026-07-10",
+      "instructor": "Emily Davis",
+      "rating": 4.6,
+      "totalStudents": 150,
+      "image": "https://picsum.photos/400/250?random=4"
+    }
+  ]
+}
