@@ -1,5 +1,4 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
-
 interface FormData {
     name: string;
     email: string;
@@ -17,7 +16,6 @@ const RegistrationForm: React.FC = () => {
         email: "",
         phone: "",
     });
-    const [loading, setLoading] = useState(false);
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
 
@@ -40,7 +38,7 @@ const RegistrationForm: React.FC = () => {
 
         try {
             const response = await fetch(
-                "https://server-phi-three-33.vercel.app/api/enquiry",
+                'https://server-phi-three-33.vercel.app/api/enquiry',
                 {
                     method: "POST",
                     headers: {
@@ -96,9 +94,9 @@ const RegistrationForm: React.FC = () => {
                     onChange={handleChange}
                     required
                 />
-                <div style={{display:'flex',justifyContent:'center'}}>
-                    <button type="submit" className="btn" disabled={loading}>
-                       {loading ? "Submitting..." : "Submit"}
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <button type="submit" className="btn">
+                        Submit
                     </button>
                 </div>
             </form>

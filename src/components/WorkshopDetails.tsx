@@ -67,7 +67,7 @@ const WorkshopDetails: React.FC = () => {
               </p>
             </div>
             <div>
-              <button className="workshop_book_btn">Book Now</button>
+              <button className="workshop_book_btn">Enroll Now</button>
             </div>
           </div>
         ))}
