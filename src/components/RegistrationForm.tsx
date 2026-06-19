@@ -40,7 +40,7 @@ const RegistrationForm: React.FC = () => {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/enquiry",
+                "https://server-phi-three-33.vercel.app/api/enquiry",
                 {
                     method: "POST",
                     headers: {
