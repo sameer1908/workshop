@@ -1,5 +1,4 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
-
 interface FormData {
     name: string;
     email: string;
@@ -40,7 +39,7 @@ const RegistrationForm: React.FC = () => {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/enquiry",
+                'https://server-phi-three-33.vercel.app/api/enquiry',
                 {
                     method: "POST",
                     headers: {
@@ -96,7 +95,7 @@ const RegistrationForm: React.FC = () => {
                     onChange={handleChange}
                     required
                 />
-                <div style={{display:'flex',justifyContent:'center'}}>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <button type="submit" className="btn">
                         Submit
                     </button>
