@@ -16,7 +16,6 @@ const RegistrationForm: React.FC = () => {
         email: "",
         phone: "",
     });
-
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
 
