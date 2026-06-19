@@ -17,7 +17,7 @@ const RegistrationForm: React.FC = () => {
         email: "",
         phone: "",
     });
-
+    const [loading, setLoading] = useState(false);
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
 
@@ -97,8 +97,8 @@ const RegistrationForm: React.FC = () => {
                     required
                 />
                 <div style={{display:'flex',justifyContent:'center'}}>
-                    <button type="submit" className="btn">
-                        Submit
+                    <button type="submit" className="btn" disabled={loading}>
+                       {loading ? "Submitting..." : "Submit"}
                     </button>
                 </div>
             </form>
