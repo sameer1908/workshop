@@ -35,7 +35,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
-  border: 1px solid gray;
+  border: none;
 }
 
 .section {
